@@ -1,10 +1,10 @@
-a = float(input("Einter an amount for alpha: "))
+alpha = float(input("Einter an amount for alpha: "))
 x = int(input("Enter an amount for x: "))
 n = int(input("Enter an amount for n: "))
 m = 2*n-1
 sign = -1
 sum = 0
-while n != 0:
+while n>0 :
   z = True
   y = 1 
   while z :
@@ -16,7 +16,7 @@ while n != 0:
     sign *=-1
     sum += (x**(2*n-1))*(sign)/y
     n -= 1
-    if sum< a :
+    if sum< alpha :
       n = 0 
 
 print(sum)

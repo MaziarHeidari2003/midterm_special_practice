@@ -1,7 +1,8 @@
 conditionCheck = True
 while conditionCheck :
   n = int(input("Enter a natural number: "))
-  if n !=0 :
+  if n !=0 :  
+    # We are going to check if the numbers are prime or not and we will continue as long as the input is 0
     cnt = 0
     m =1
     while  m<=n:
