@@ -1,35 +1,38 @@
-n = 0
+n = 0 
 while n <= 0 :
-  n = int(input("Enter how many numbers you want to use: "))
-message = "So lets do some calculation with {} numbers!"
-print(message.format(n))  
+  n = int(input("enter how many numbers we are going to use: "))
+message = "So we are going to use {} numbers"
+print(message.format(n))
 
-i = 0
 num1 = int(input("Enter: "))
 
 dec = False
 inc = False
 both = True
+i = 0 
 
-while i < n - 1 :
+while i < n-1 :
   num2 = int(input("Enter: "))
-  dif = num2 - num1
+  diff = (num2 - num1)
 
-  if dif > 0 :
-    inc = True
-    both = False
-  if dif < 0 :
+  if diff < 0 :
     dec = True
     both = False
+  if diff > 0 :
+    inc = True
+    both = False
+  num1 = num2 
+  i += 1    
 
-  num1 = num2
-  i += 1   
-
-if both:
-  print("it could be both")
+if both :
+  print("It could be incremental or decremental")
 elif inc and dec :
-  print("its not incremental or decremental")
+  print("Neither incremental or decremental ")
 elif inc :
-  print("its incremental")
-else:
-  print("decremental")      
+  print("Its incremental")
+else: 
+  print("Its decremental")      
+
+
+
+
